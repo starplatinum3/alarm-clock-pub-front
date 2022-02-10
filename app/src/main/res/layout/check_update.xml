@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:gravity="center"
+	android:padding="20dp"
+    android:layout_height="match_parent">
+
+	<ProgressBar
+		android:id="@+id/loading"
+		style="@android:style/Widget.Material.ProgressBar.Large"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:padding="20dp"
+		android:visibility="visible" />
+
+	<LinearLayout
+		android:id="@+id/downloading_box"
+		android:visibility="gone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/downloading"
+			android:textColor="@color/colorWhite"
+			android:textSize="20dp"
+			/>
+		<ProgressBar
+			android:id="@+id/downloading"
+			style="@android:style/Widget.Material.ProgressBar.Horizontal"
+			android:paddingVertical="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:visibility="gone"
+		android:id="@+id/download_box"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/version_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20dp"
+			android:textStyle="bold"
+			android:paddingHorizontal="20dp"
+			android:textColor="@color/colorWhite"
+			tools:ignore="SpUsage,UnusedAttribute" />
+
+		<TextView
+			android:id="@+id/version_desc"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="18dp"
+			android:padding="20dp"
+			android:textColor="@color/colorWhite"
+			tools:ignore="SpUsage" />
+
+		<Button
+			android:id="@+id/upgrade_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_bg"
+			android:textColor="@color/colorWhite"
+			android:textSize="20dp"
+			android:text="@string/upgrade"
+			tools:ignore="SpUsage" />
+
+	</LinearLayout>
+
+	<TextView
+		android:visibility="gone"
+		android:id="@+id/message"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/colorWhite"
+		android:textSize="20dp"
+		android:textAlignment="center"
+		android:padding="20dp"
+		tools:ignore="SpUsage" />
+
+</LinearLayout>

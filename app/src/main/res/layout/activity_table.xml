@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/drawerBox"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	TableRow 安卓
+	<TableRow
+		>
+		<TextView
+			android:text="aaa"
+			/>
+		<TextView
+			android:text="bbb"
+			/>
+		<TextView
+			android:text="ccc"
+			/>
+
+	</TableRow>
+	<TableRow
+		>
+		<TextView
+			android:text="aaa"
+			/>
+		<TextView
+			android:text="bbb"
+			/>
+		<TextView
+			android:text="ccc"
+			/>
+
+	</TableRow>
+
+	作者：慕运维2858188
+	链接：https://www.imooc.com/article/18446
+	来源：慕课网
+</TableLayout>

@@ -1,0 +1,82 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "8e96f8821eb1b55523603958a4cdacd8",
+    "entities": [
+      {
+        "tableName": "clock_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`clock_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `hour` INTEGER NOT NULL, `minute` INTEGER NOT NULL, `ringCycle` INTEGER NOT NULL, `isStarted` INTEGER NOT NULL, `remark` TEXT, `ringMusicUri` TEXT, `isVibrated` INTEGER NOT NULL, `stopOnce` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "clockId",
+            "columnName": "clock_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hour",
+            "columnName": "hour",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minute",
+            "columnName": "minute",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ringCycle",
+            "columnName": "ringCycle",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isStarted",
+            "columnName": "isStarted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "remark",
+            "columnName": "remark",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ringMusicUri",
+            "columnName": "ringMusicUri",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isVibrated",
+            "columnName": "isVibrated",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stopOnce",
+            "columnName": "stopOnce",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "clock_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8e96f8821eb1b55523603958a4cdacd8')"
+    ]
+  }
+}

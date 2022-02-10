@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.chenjianlink.android.alarmclock.activity.SoundActivity">
+<!--    tools:context="org.tuzhao.sqlite.activity.SoundActivity"-->
+    <Button
+        android:id="@+id/bt_ringtone"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="Ringtone"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="btn_back"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/bt_sound_pool"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_ringtone"
+        android:layout_alignStart="@+id/bt_ringtone"
+        android:layout_below="@+id/bt_ringtone"
+        android:layout_marginTop="15dp"
+        android:text="SoundPool"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/bt_media"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_sound_pool"
+        android:layout_alignStart="@+id/bt_sound_pool"
+        android:layout_below="@+id/bt_sound_pool"
+        android:layout_marginTop="15dp"
+        android:text="MediaPlayer"
+        android:textAllCaps="false"/>
+</RelativeLayout>
